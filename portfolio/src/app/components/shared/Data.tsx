@@ -1,10 +1,21 @@
-// import Design from "/public/Images/Vector.png";
-import Design from "../../assets/Images/Vectors.svg";
-
+import { StaticImageData } from "next/image";
+import design from "../../assets/Images/Vectors.svg";
+import brand from "../../assets/Images/branding.png";
+import UX from "../../assets/Images/UX.png";
+import usability from "../../assets/Images/usability.png";
+////portfolio
+// import card1 from "../../assets/portfolio/card-01.png";
+// import card2 from "../../assets/portfolio/card-02.png";
+// import card3 from "../../assets/portfolio/card-03.png";
+// import card4 from "../../assets/portfolio/card-04.png";
+// import card5 from "../../assets/portfolio/card-05.png";
+// import card6 from "../../assets/portfolio/card-06.png";
+import card1 from "../../assets/portfolio/card-01.png";
 type about = {
   heading: string;
   num: number;
 };
+/////about data
 export const aboutData: about[] = [
   {
     heading: "Projects Done",
@@ -19,30 +30,67 @@ export const aboutData: about[] = [
     num: 273,
   },
 ];
-type service = {};
-export const servicesData = [
+interface service {
+  img: StaticImageData;
+  heading: string;
+  des: string;
+}
+///////Services data
+export const servicesData: service[] = [
   {
-    img: "../../assets/Images/Vectors.svg",
+    img: design,
     heading: "Design",
     des: "I specialize in web development and design, creating visually appealing, user-friendly digital experiences",
   },
   {
-    img: `${Design}`,
+    img: brand,
     heading: "Branding",
     des: "I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.",
   },
   {
-    img: "../../../../public/Images/Vector.png",
+    img: UX,
     heading: "UX Research",
     des: "I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.",
   },
   {
-    img: "../../../../public/Images/Vector.png",
+    img: usability,
     heading: "Usability Testing",
     des: "I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.",
   },
 ];
-export const contactData = [{}];
+/////////portfolio data
+export const portfolioData: service[] = [
+  {
+    img: card1,
+    heading: "Educational Platform",
+    des: "Web Design / Usability Testing",
+  },
+  // {
+  //   img: card2,
+  //   heading: "Travel App Design",
+  //   des: "UX Research / App Design ",
+  // },
+  // {
+  //   img: card3,
+  //   heading: "Personal Page ",
+  //   des: "Web Design ",
+  // },
+  // {
+  //   img: card4,
+  //   heading: "Furniture Mobile App",
+  //   des: "App Design",
+  // },
+  // {
+  //   img: card5,
+  //   heading: "Coffee House Landing Page",
+  //   des: "Web Design / UI research",
+  // },
+  // {
+  //   img: card6,
+  //   heading: "Home Services Page",
+  //   des: "Web Design / Marketing",
+  // },
+];
 
 interface skill {
   name: string;
