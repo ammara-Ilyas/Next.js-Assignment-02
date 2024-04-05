@@ -2,7 +2,7 @@ import React from "react";
 import { skill } from "../shared/Data";
 function Skillbar() {
   return (
-    <div className="py-16 text-center">
+    <div className="py-16 text-center pt-60">
       <h1 className="font-bold text-4xl ">Core Design Skills</h1>
       <p className="text-center w-2/3 mx-auto py-5">
         I excel in essential design skills, creating visually stunning and

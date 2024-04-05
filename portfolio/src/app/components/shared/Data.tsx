@@ -5,11 +5,11 @@ import UX from "../../assets/Images/UX.png";
 import usability from "../../assets/Images/usability.png";
 ////portfolio
 // import card1 from "../../assets/portfolio/card-01.png";
-// import card2 from "../../assets/portfolio/card-02.png";
-// import card3 from "../../assets/portfolio/card-03.png";
-// import card4 from "../../assets/portfolio/card-04.png";
-// import card5 from "../../assets/portfolio/card-05.png";
-// import card6 from "../../assets/portfolio/card-06.png";
+import card2 from "../../assets/portfolio/card-02.png";
+import card3 from "../../assets/portfolio/card-03.png";
+import card4 from "../../assets/portfolio/card-04.png";
+import card5 from "../../assets/portfolio/card-05.png";
+import card6 from "../../assets/portfolio/card-06.png";
 import card1 from "../../assets/portfolio/card-01.png";
 type about = {
   heading: string;
@@ -65,31 +65,31 @@ export const portfolioData: service[] = [
     heading: "Educational Platform",
     des: "Web Design / Usability Testing",
   },
-  // {
-  //   img: card2,
-  //   heading: "Travel App Design",
-  //   des: "UX Research / App Design ",
-  // },
-  // {
-  //   img: card3,
-  //   heading: "Personal Page ",
-  //   des: "Web Design ",
-  // },
-  // {
-  //   img: card4,
-  //   heading: "Furniture Mobile App",
-  //   des: "App Design",
-  // },
-  // {
-  //   img: card5,
-  //   heading: "Coffee House Landing Page",
-  //   des: "Web Design / UI research",
-  // },
-  // {
-  //   img: card6,
-  //   heading: "Home Services Page",
-  //   des: "Web Design / Marketing",
-  // },
+  {
+    img: card2,
+    heading: "Travel App Design",
+    des: "UX Research / App Design ",
+  },
+  {
+    img: card3,
+    heading: "Personal Page ",
+    des: "Web Design ",
+  },
+  {
+    img: card4,
+    heading: "Furniture Mobile App",
+    des: "App Design",
+  },
+  {
+    img: card5,
+    heading: "Coffee House Landing Page",
+    des: "Web Design / UI research",
+  },
+  {
+    img: card6,
+    heading: "Home Services Page",
+    des: "Web Design / Marketing",
+  },
 ];
 
 interface skill {
