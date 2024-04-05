@@ -11,6 +11,10 @@ import card4 from "../../assets/portfolio/card-04.png";
 import card5 from "../../assets/portfolio/card-05.png";
 import card6 from "../../assets/portfolio/card-06.png";
 import card1 from "../../assets/portfolio/card-01.png";
+///////images for blog
+import Typography from "../../assets/portfolio/Typography.png";
+import psycology from "../../assets/portfolio/psycology.png";
+import bootsing from "../../assets/portfolio/bootsing.png";
 type about = {
   heading: string;
   num: number;
@@ -120,5 +124,35 @@ export const skill = [
   {
     name: "Php",
     range: "60%",
+  },
+];
+///////blog
+interface blog {
+  img: StaticImageData;
+  date: string;
+  heading: string;
+  description: string;
+}
+export const blogData: blog[] = [
+  {
+    img: Typography,
+    date: "August 15, 2023 / UX",
+    heading: "Typography Tips for Design Success",
+    description:
+      "Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs.",
+  },
+  {
+    img: psycology,
+    date: "August 15, 2023 / UX",
+    heading: "Color Psychology in UX Physocology",
+    description:
+      "Explore how color choices impact user emotions and decision-making in UX design.",
+  },
+  {
+    img: bootsing,
+    date: "August 15, 2023 / UX",
+    heading: "Boosting UX with Microinteractions",
+    description:
+      "Discover the power of microinteractions in enhancing user experience and engagement.",
   },
 ];

@@ -29,18 +29,6 @@ function Portfolio() {
                   </div>
                 </div>
               </div>
-
-              // <div className="w-1/4 border-2 border-x-green-500 px-10 flex flex-col gap-6">
-              //   <Image src={item.img} alt={item.heading} className="w-full" />
-              //   <h2 className="text-xl font-bold">{item.heading}</h2>
-
-              //   <div className="flex justify-between font-sans w-full items-center">
-              //     <p className="text-sm ">{item.des}</p>{" "}
-              //     <span className=" rounded-full bg-red-600 p-2 text-xl text-white">
-              //       <MdArrowOutward />
-              //     </span>
-              //   </div>
-              // </div>
             ))}
         </div>
       </div>

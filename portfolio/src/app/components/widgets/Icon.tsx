@@ -9,7 +9,9 @@ function Icon() {
         {contactIcons &&
           contactIcons.map((item, i) => (
             <li key={i}>
-              <Link href={item.link}>{item.icon}</Link>
+              <Link href={item.link} target="_blank">
+                {item.icon}
+              </Link>
             </li>
           ))}
       </ul>

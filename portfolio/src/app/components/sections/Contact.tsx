@@ -27,7 +27,9 @@ function Contact() {
             {contactIcons &&
               contactIcons.map((item, i) => (
                 <li key={i} className=" bg-slate-50 p-1 rounded-full">
-                  <Link href={item.link}>{item.icon}</Link>
+                  <Link href={item.link} target="_blank">
+                    {item.icon}
+                  </Link>
                 </li>
               ))}
           </ul>

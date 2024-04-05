@@ -1,11 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../Logo.png";
 import Icon from "../widgets/Icon";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa";
+import Logo from "../../assets/portfolio/Logo.png";
 
 function Footer() {
   return (

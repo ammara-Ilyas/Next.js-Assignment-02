@@ -15,7 +15,7 @@ function Hero() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse,
           maiores sed iure impedit numquam?
         </p>
-        <div className="flex  items-center">
+        <div className="flex  items-center pb-6">
           <Button />
           <button className="mx-4 text-blacks py-2 px-7 border-black	 bg-white">
             Portfolio
