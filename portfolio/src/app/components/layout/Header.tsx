@@ -10,13 +10,13 @@ function Header() {
   const [isSmall, setIsSmall] = useState(false);
   return (
     <div className="  ">
-      <header className="bg-rose-300 relative border-2  font-bold  grid grid-cols-9  items-center  py-3 duration-75		">
+      <header className="bg-rose-300 relative  font-bold  grid grid-cols-9  items-center  py-3 duration-75		">
         <div className="rounded-full hidden bg-red-500 absolute left-1/3 w-28 h-28 -top-3/4 z-100"></div>
         <div className="w-40	col-start-1 pl-10">
           <Image src={Logo} alt="logo" className="w-full" />
         </div>
         <nav
-          className={`col-start-3 col-end-8 row-start-2 md:block md:row-start-1 border-2 ${
+          className={`col-start-3 col-end-8 row-start-2 md:block md:row-start-1  ${
             isSmall ? "block" : "hidden"
           }`}
         >
@@ -37,7 +37,7 @@ function Header() {
           </ul>
         </nav>
 
-        <div className="col-start-9 row-start-1 border-2 md:col-start-8 md:col-end-10 flex justify-center">
+        <div className="col-start-9 row-start-1 md:col-start-8 md:col-end-10 flex justify-center">
           <div className=" hidden md:block">
             <Button />
           </div>
