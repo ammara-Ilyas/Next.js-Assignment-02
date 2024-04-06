@@ -1,7 +1,7 @@
 import React from "react";
 import { aboutData } from "../shared/Data";
 import Image from "next/image";
-import half from "../../../../public/Images/Background.png";
+import half from "../../../../public/Background.png";
 import Wrapper from "../layout/Wrapper";
 function About() {
   return (
