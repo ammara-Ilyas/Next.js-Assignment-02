@@ -11,23 +11,23 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section id="about" className="bg-slate-900	 w-full mx-auto py-10">
+      <section id="about" className="bg-slate-900	 ">
         <About />
       </section>
-      <section id="service" className="	text-black w-full mx-auto py-10">
+      <section id="service" className="	text-black ">
         <Services />
       </section>
-      <section id="portfolio" className="	 w-full mx-auto py-10">
+      <section id="portfolio" className="	 ">
         <Portfolio />
         <Skillbar />
       </section>
-      <section id="testimonial" className="bg-rose-300	 w-full mx-auto py-10">
+      <section id="testimonial" className="bg-rose-300	 ">
         <Testimonial />
       </section>
-      <section id="blog" className="bg-rose-300	 w-full mx-auto py-10">
+      <section id="blog" className="bg-rose-300	 ">
         <Blog />
       </section>
-      <section id="contact" className="	 w-full mx-auto py-7 bg-rose-300">
+      <section id="contact" className="	 bg-rose-300">
         <Contact />
       </section>
     </>
