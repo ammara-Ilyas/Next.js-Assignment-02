@@ -21,7 +21,7 @@ export default function Home() {
         <Portfolio />
         <Skillbar />
       </section>
-      <section id="testimonial" className="bg-rose-300	 ">
+      <section className="bg-rose-300	 ">
         <Testimonial />
       </section>
       <section id="blog" className="bg-rose-300	 ">

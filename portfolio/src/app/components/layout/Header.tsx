@@ -10,14 +10,15 @@ function Header() {
   const [isSmall, setIsSmall] = useState(false);
   return (
     <div className="  ">
-      <header className="bg-rose-300 relative  font-bold  grid grid-cols-9 px-10 items-center  py-3 duration-75		">
+      <header className="bg-rose-300 relative border-2  font-bold  grid grid-cols-9  items-center  py-3 duration-75		">
         <div className="rounded-full hidden bg-red-500 absolute left-1/3 w-28 h-28 -top-3/4 z-100"></div>
-        <div className="w-32	col-start-1 ">
-          <Image src={Logo} alt="logo" width={400} height={400} />
+        <div className="w-40	col-start-1 pl-10">
+          <Image src={Logo} alt="logo" className="w-full" />
         </div>
         <nav
-          style={{ display: isSmall ? "block" : "none" }}
-          className=" col-start-3 col-end-9 row-start-2   md:row-start-1"
+          className={`col-start-3 col-end-8 row-start-2 md:block md:row-start-1 border-2 ${
+            isSmall ? "block" : "hidden"
+          }`}
         >
           <ul className="flex flex-col justify-center gap-5 items-center  text-lg	md:flex-row md:gap-2">
             <li className="w-1/5  text-left">
@@ -29,20 +30,18 @@ function Header() {
             <li className="w-1/5  text-left">
               <Link href="#projects">Projects</Link>
             </li>
-            <li className="w-1/5  text-left">
-              <Link href="#testimonial">Testimonial</Link>
-            </li>
+
             <li className="w-1/5  text-left">
               <Link href="#contact">Contact</Link>
             </li>
           </ul>
         </nav>
 
-        <div className="col-start-9 row-start-1   ">
+        <div className="col-start-9 row-start-1 border-2 md:col-start-8 md:col-end-10 flex justify-center">
           <div className=" hidden md:block">
             <Button />
           </div>
-          <div className=" block text-2xl md:hidden">
+          <div className=" block text-2xl md:hidden col-start-10 ml-8">
             <VscThreeBars onClick={() => setIsSmall(!isSmall)} />
           </div>
         </div>
