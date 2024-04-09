@@ -21,13 +21,13 @@ export default function Home() {
         <Portfolio />
         <Skillbar />
       </section>
-      <section className="bg-rose-300	 ">
+      <section className="bg-rose-200	 ">
         <Testimonial />
       </section>
-      <section id="blog" className="bg-rose-300	 ">
+      <section id="blog" className="bg-rose-200	 ">
         <Blog />
       </section>
-      <section id="contact" className="	 bg-rose-300">
+      <section id="contact" className="	 bg-rose-200">
         <Contact />
       </section>
     </>

@@ -4,7 +4,7 @@ import heroImg from "/public/hero-poster.png";
 import Button from "../widgets/Button";
 function Hero() {
   return (
-    <section className="flex flex-wrap flex-col sm:flex-row  w-full h-[64vh] justify-center items-center bg-rose-300 gap-3 pt-7 ">
+    <section className="flex flex-wrap flex-col sm:flex-row  w-full h-[64vh] justify-center items-center bg-rose-200 gap-3 pt-7 ">
       <div className="  font-serif w-3/4  flex justify-evenly gap-4 sm:gap-2 sm:w-5/12  md:w-2/5 lg:w-1/3 flex-col ">
         <p className=" font-serif">UX Designer</p>
         <div className="text-3xl font-bold ">

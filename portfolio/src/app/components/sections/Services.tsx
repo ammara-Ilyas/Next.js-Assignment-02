@@ -6,7 +6,7 @@ import Wrapper from "../layout/Wrapper";
 function Services() {
   return (
     <Wrapper>
-      <div className=" flex flex-col justify-evenly items-center text-center  mx-auto  ">
+      <div className=" flex flex-col justify-evenly items-center text-center  mx-auto">
         <h1 className="text-4xl font-semibold">Services</h1>
         <p className="text-black py-5 w-10/12 mx-auto md:w-8/12">
           Explore my design services, from user interface and experience to
@@ -18,7 +18,7 @@ function Services() {
             servicesData.map((item, i) => (
               <div
                 key={i}
-                className="  flex gap-4 flex-col basis-4/5 sm:basis-2/5 lg:basis-56  justify-center items-center "
+                className="  flex gap-4 flex-col basis-4/5 lg:basis-56  justify-center items-center "
               >
                 <Image src={item.img} alt="work" />
                 <div className="">
