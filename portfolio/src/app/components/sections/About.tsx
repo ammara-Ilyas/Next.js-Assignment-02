@@ -6,8 +6,8 @@ import Wrapper from "../layout/Wrapper";
 function About() {
   return (
     <Wrapper>
-      <div className="  text-center items-center font-thin w-full mx-auto  text-white relative ">
-        <div className=" absolute   -bottom-14  right-1/2 z-0">
+      <div className=" h-[40vh] text-center items-center font-thin w-full mx-auto  text-white relative ">
+        <div className=" absolute   -bottom-10  right-1/2 z-0">
           <Image src={half} alt="background" />
         </div>
         <h1 className="font-semibold text-3xl ">About Me</h1>
@@ -22,8 +22,8 @@ function About() {
           {aboutData &&
             aboutData.map((item, i) => (
               <div className="  w-1/4 sm:1/3 " key={i}>
-                <p className="text-4xl font-bold text-rose-200">{item.num}+</p>
-                <p className="mt-3 font-semibold">{item.heading}</p>
+                <h2 className="text-6xl font-bold text-rose-200">{item.num}+</h2>
+                <p className="text-2xl mt-3 font-semibold">{item.heading}</p>
               </div>
             ))}
         </div>
