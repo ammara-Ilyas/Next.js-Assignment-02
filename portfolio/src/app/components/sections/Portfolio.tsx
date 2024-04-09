@@ -8,19 +8,21 @@ import Wrapper from "../layout/Wrapper";
 function Portfolio() {
   return (
     <Wrapper>
-      <div className="flex flex-col justify-center items-center  ">
-        <div className="bg-rose-300 flex pt-10 items-center w-full  flex-col  ">
-          <h1 className="text-4xl font-bold">Portfolio</h1>
-          <p className="pt-4 w-3/4 mx-auto text-center md:w-3/5">
-            Explore my design services, from user interface and experience to
-            prototyping and testing. Let's craft exceptional digital experiences
-            together.
-          </p>
-          <div className="flex flex-wrap gap-16 justify-center pt-10 w-full mb-10">
+      <div className="  flex flex-col justify-center items-center  ">
+        <div>
+          <div className="absolute bg-rose-200 flex pt-10 items-center w-full  flex-col  h-[350px]">
+            <h1 className="text-4xl font-bold">My Portfolio</h1>
+            <p className="pt-4 w-3/4 mx-auto text-center md:w-3/5">
+              Explore my design services, from user interface and experience to
+              prototyping and testing. Let's craft exceptional digital
+              experiences together.
+            </p>
+          </div>
+          <div className="relative mt-40 flex flex-wrap gap-16 justify-center pt-10 w-full mb-10">
             {portfolioData &&
               portfolioData.map((item, i) => (
                 <div
-                  className="basis-3/4 sm:basis-1/3 lg:basis-1/4 rounded overflow-hidden shadow-lg"
+                  className=" sm:basis-1/3 lg:basis-1/4  overflow-hidden"
                   key={i}
                 >
                   <Image className="w-full" src={item.img} alt={item.heading} />

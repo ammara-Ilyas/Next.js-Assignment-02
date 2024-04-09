@@ -9,13 +9,21 @@ import { VscThreeBars } from "react-icons/vsc";
 function Header() {
   const [isSmall, setIsSmall] = useState(false);
   return (
+<<<<<<< HEAD
     <header className="bg-rose-200  font-bold  grid grid-cols-9  items-center  py-3 duration-75 sticky top-0 z-50">
+=======
+    <header className="bg-rose-200  font-bold  grid grid-cols-9  items-center  py-3 duration-75 sticky top-0 z-40">
+>>>>>>> c155ca16a4480e1b8fa215b74638fbaa17bfb73b
       <div className="rounded-full hidden bg-red-500 absolute left-1/3 w-28 h-28 -top-3/4 z-100"></div>
       <div className="w-40	col-start-1 pl-10">
         <Image src={Logo} alt="logo" className="w-full" />
       </div>
       <nav
+<<<<<<< HEAD
         className={`	 col-start-3 col-end-8 row-start-2 md:block md:z-0 bg-transparent md:row-start-1  ${
+=======
+        className={`col-start-3 col-end-8 row-start-2 md:block md:row-start-1  ${
+>>>>>>> c155ca16a4480e1b8fa215b74638fbaa17bfb73b
           isSmall ? "block" : "hidden"
         }`}
       >
