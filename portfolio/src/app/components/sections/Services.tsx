@@ -13,7 +13,7 @@ function Services() {
           prototyping and testing. Let's craft exceptional digital experiences
           together.
         </p>
-        <div className="flex flex-wrap gap-5 lg:gap-3 justify-center items-center    w-5/6 lg:11/12 sm:w-11/12 ">
+        <div className="flex  lg:gap-3 justify-between items-center  w-5/6 lg:11/12 sm:w-11/12 ">
           {servicesData &&
             servicesData.map((item, i) => (
               <div
