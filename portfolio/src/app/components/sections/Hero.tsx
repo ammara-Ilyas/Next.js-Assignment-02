@@ -22,7 +22,7 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="  w-2/3 sm:w-5/12 h-72 lg:w-1/3 ">
+      <div className=" hidden sm:block w-2/3 sm:w-5/12 h-72 lg:w-1/3 ">
         <Image src={heroImg} alt="hero section" className="w-[550px] h-[428px]" />
       </div>
     </section>
