@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
@@ -7,6 +8,7 @@ import Portfolio from "./components/sections/Portfolio";
 import Skillbar from "./components/sections/Skillbar";
 import Testimonial from "./components/sections/Testimonial";
 import Blog from "./components/sections/Blog";
+
 export default function Home() {
   return (
     <>

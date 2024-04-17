@@ -3,13 +3,14 @@ import { addressIcon } from "../shared/IconsData";
 import { contactIcons } from "../shared/IconsData";
 import Link from "next/link";
 import Wrapper from "../layout/Wrapper";
+import Form from "../widgets/Form";
 function Contact() {
   return (
     <Wrapper>
-      <div className="relative text-center">
+      <div className="relative text-center ">
         <div className="rounded-full bg-red-500 absolute top-2/4 -left-14 w-28 h-28  z-0"></div>
-        <div className="flex gap-10  flex-col md:flex-row justify-center w-11/12  ">
-          <div className=" w-10/12 md:w-2/5 flex flex-col gap-4 text-left z-50">
+        <div className="flex gap-10  flex-col md:flex-row justify-center w-11/12  ml-3 ">
+          <div className=" w-10/12 md:w-2/5 flex flex-col gap-4 text-left z-0">
             <div>
               <h1 className="text-4xl font-bold ">Get in Touch</h1>
               <p className="py-4">
@@ -39,40 +40,7 @@ function Contact() {
                 ))}
             </ul>
           </div>
-          <form className="  flex flex-col gap-5  w-10/12   md:w-1/2 lg:w-5/12 z-50">
-            <input
-              type="text"
-              name=""
-              id=""
-              className=" w-full px-5 py-3 border-none outline-none rounded-sm"
-              placeholder="First Name"
-            />
-            <input
-              type="email"
-              name=""
-              id=""
-              className=" w-full px-5 py-3 rounded-sm border-none outline-none"
-              placeholder="Email"
-            />
-            <input
-              type="p"
-              name=""
-              id=""
-              className=" w-full px-5 py-3 border-none outline-none rounded-sm"
-              placeholder="Phone Number"
-            />
-            <textarea
-              name=""
-              id=""
-              placeholder="Enter Message"
-              cols={5}
-              rows={5}
-              className="px-5 py-3 border-none outline-none rounded-sm"
-            ></textarea>
-            <button className="bg-slate-950 text-white py-2 w-2/5 ">
-              Send Message
-            </button>
-          </form>
+          <Form />
         </div>
       </div>
     </Wrapper>

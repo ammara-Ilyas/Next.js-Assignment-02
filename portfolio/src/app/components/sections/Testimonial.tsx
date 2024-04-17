@@ -14,7 +14,7 @@ function Testimonial() {
           alt="red circle"
           className="absolute -top-10 left-1/2"
         />
-        <h1 className="text-4xl font-bold z-50 pt-10 ">Testimonials</h1>
+        <h1 className="text-4xl font-bold z-0 pt-10 ">Testimonials</h1>
         <div className="grid grid-cols-12 place-items-center">
           <MdArrowBackIos className="text-3xl col-span-1 text-gray-800 lg:col-start-2" />
           <p className="col-start-3 col-end-11 text-center text-xl font-light lg:col-start-4 lg:col-end-10">

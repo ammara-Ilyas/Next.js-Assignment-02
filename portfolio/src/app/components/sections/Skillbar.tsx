@@ -1,7 +1,17 @@
+"use client";
 import React from "react";
 import { skill } from "../shared/Data";
 import Wrapper from "../layout/Wrapper";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 function Skillbar() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
   return (
     <Wrapper>
       <div className="py-16 text-center">
@@ -17,8 +27,10 @@ function Skillbar() {
               <div className=" basis-full mx-auto sm:basis-5/12 " key={i}>
                 <p>{item.name}</p>
                 <div className="flex">
-                  <div className="bg-slate-300 h-3 rounded-md mt-2 w-11/12 justify-between items-center ">
+                  <div className="bg-slate-300 overflow-hidden	 h-3 rounded-md mt-2 w-11/12 justify-between items-center ">
                     <div
+                      data-aos="fade-right"
+                      data-aos-delay=""
                       style={{ width: `${item.range}` }}
                       className="bg-black  h-3 text-white text-sm rounded-md"
                     ></div>{" "}

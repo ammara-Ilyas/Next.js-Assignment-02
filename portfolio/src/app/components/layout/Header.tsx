@@ -38,7 +38,7 @@ function Header() {
 
       <div className="col-start-9 row-start-1 md:col-start-8 md:col-end-10 flex justify-center">
         <div className=" hidden md:block">
-          <Button />
+          <Button heading="Hire me" />
         </div>
         <div className=" block text-2xl md:hidden col-start-10 ml-8">
           <VscThreeBars onClick={() => setIsSmall(!isSmall)} />
