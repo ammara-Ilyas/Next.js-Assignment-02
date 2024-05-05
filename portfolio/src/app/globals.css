@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+.navLink {
+  transition: right-0 2s ease-in-out;
+} */

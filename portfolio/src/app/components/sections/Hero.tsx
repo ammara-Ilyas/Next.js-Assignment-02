@@ -9,7 +9,7 @@ function Hero() {
         <p className=" font-serif">UX Designer</p>
         <div className="text-3xl font-bold ">
           <h1 className="text-black mb-2">Hi There, I'm</h1>
-          <h1 className="text-red-500">Sarah Jones</h1>
+          <h1 className="text-red-500">Ammara Ilyas</h1>
         </div>
         <p className=" w-11/12 md:w-10/12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam esse,
@@ -22,7 +22,7 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="  hidden sm:block w-2/3 sm:w-5/12 h-full lg:w-1/3 ">
+      <div className="   sm:block w-2/3 sm:w-5/12 h-full lg:w-1/3 ">
         <Image src={heroImg} alt="hero section" className="h-[55vh]" />
       </div>
     </section>

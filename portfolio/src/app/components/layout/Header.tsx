@@ -5,6 +5,7 @@ import Button from "../widgets/Button";
 import Image from "next/image";
 import Logo from "../../Logo.png";
 import { VscThreeBars } from "react-icons/vsc";
+import { RxCross2 } from "react-icons/rx";
 
 function Header() {
   const [isSmall, setIsSmall] = useState(false);
@@ -15,11 +16,14 @@ function Header() {
         <Image src={Logo} alt="logo" className="w-full" />
       </div>
       <nav
-        className={`	 col-start-3 col-end-8 row-start-2 md:block md:z-0 bg-transparent md:row-start-1  ${
-          isSmall ? "block" : "hidden"
+        className={` navLink	 col-start-4 col-end-10 row-start-0 md:block md:z-0 bg-red-400 bg-opacity-90 md:row-start-1   w-full absolute top-1 right-100 h-screen  ${
+          isSmall ? "block right-0" : "hidden"
         }`}
       >
-        <ul className="flex flex-col justify-center gap-5 items-center  text-lg	md:flex-row md:gap-2">
+        <div className="pl-5  pt-5  text-3xl">
+          <RxCross2 onClick={() => setIsSmall(false)} />
+        </div>
+        <ul className="flex flex-col text-2xl md:text-lg w-full mt-24  gap-5 items-center h-full  	md:flex-row md:gap-2">
           <li className="w-1/5  text-left">
             <Link href="#about">About</Link>
           </li>
