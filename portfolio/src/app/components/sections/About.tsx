@@ -18,11 +18,13 @@ function About() {
           quasi vero, veritatis ducimus quidem. Facere ipsum alias quos delectus
           laboriosam sequi.
         </p>
-        <div className="flex  my-4 flex-wrap justify-between sm:justify-center sm:gap-6  px-4 w-full text-center z-50">
+        <div className="flex  my-4 flex-wrap justify-between sm:justify-center sm:gap-6  px-4 w-full text-center z-30">
           {aboutData &&
             aboutData.map((item, i) => (
               <div className="  w-1/4 sm:1/3 " key={i}>
-                <h2 className="text-6xl font-bold text-rose-200">{item.num}+</h2>
+                <h2 className="text-6xl font-bold text-rose-200">
+                  {item.num}+
+                </h2>
                 <p className="text-2xl mt-3 font-semibold">{item.heading}</p>
               </div>
             ))}

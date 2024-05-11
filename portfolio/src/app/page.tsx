@@ -11,7 +11,7 @@ import Blog from "./components/sections/Blog";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <section id="about" className="bg-slate-900	 ">
         <About />
@@ -32,6 +32,6 @@ export default function Home() {
       <section id="contact" className="	 bg-rose-200">
         <Contact />
       </section>
-    </>
+    </div>
   );
 }
